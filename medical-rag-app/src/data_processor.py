@@ -1,214 +1,88 @@
-"""
-Data processing module for the Medical RAG application.
-Handles dataset downloading and preprocessing.
-"""
-
 import logging
-import json
 from pathlib import Path
-import pandas as pd
+from typing import List, Dict
 
-logger = logging.getLogger(__name__)
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from pypdf import PdfReader
 
-def download_dataset():
-    """
-    Download the medical QA dataset from Hugging Face.
-    
-    Returns:
-        dataset: The downloaded dataset or None if an error occurred
-    """
+from src.utils import DOCUMENTS_DIR, CHUNK_SIZE, CHUNK_OVERLAP
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def extract_text_from_pdf(pdf_path: Path) -> str:
+    """Extracts text from a single PDF file."""
     try:
-        from datasets import load_dataset
-        
-        logger.info("Downloading medical QA dataset from Hugging Face...")
-        dataset = load_dataset("Malikeh1375/medical-question-answering-datasets", "all-processed")
-        
-        # Save the dataset to disk
-        dataset.save_to_disk("data/raw/medical_qa_dataset")
-        logger.info("Dataset downloaded and saved to data/raw/medical_qa_dataset")
-        
-        # Save a sample for inspection
-        sample_data = dataset["train"].select(range(min(5, len(dataset["train"])))).to_dict()
-        with open("data/raw/sample_data.json", "w") as f:
-            json.dump(sample_data, f, indent=2)
-        logger.info("Sample data saved to data/raw/sample_data.json")
-        
-        return dataset
+        reader = PdfReader(pdf_path)
+        text = ""
+        for page in reader.pages:
+            page_text = page.extract_text()
+            if page_text:  # Ensure text was extracted
+                text += page_text + "\n" # Add newline between pages
+        logging.info(f"Successfully extracted text from {pdf_path.name}")
+        return text
     except Exception as e:
-        logger.error(f"Error downloading dataset: {e}")
-        return None
-
-def preprocess_dataset():
-    """
-    Process the downloaded dataset for RAG.
-    Converts the dataset into a format suitable for RAG.
-    
-    Returns:
-        list: Processed documents or None if an error occurred
-    """
-    try:
-        from datasets import load_from_disk
-        
-        logger.info("Loading dataset from disk...")
-        try:
-            dataset = load_from_disk("data/raw/medical_qa_dataset")
-        except FileNotFoundError:
-            logger.warning("Dataset not found on disk. Downloading first...")
-            dataset = download_dataset()
-            if dataset is None:
-                return None
-        
-        logger.info("Processing dataset...")
-        
-        # Process the train split (the only one in this dataset)
-        processed_data = []
-        
-        df = dataset["train"].to_pandas()
-        logger.info(f"Processing {len(df)} records...")
-        
-        # Process each row
-        for idx, row in df.iterrows():
-            try:
-                instruction = str(row["instruction"]).strip()
-                question = str(row["input"]).strip()
-                answer = str(row["output"]).strip()
-                
-                # Skip empty entries
-                if not question or not answer:
-                    continue
-                
-                # Create document
-                document = {
-                    "content": f"Question: {question}\nAnswer: {answer}",
-                    "metadata": {
-                        "instruction": instruction,
-                        "question": question,
-                        "answer": answer,
-                        "id": f"train_{idx}"
-                    }
-                }
-                processed_data.append(document)
-                
-                # Log progress periodically
-                if idx % 10000 == 0:
-                    logger.info(f"Processed {idx} records...")
-                    
-            except Exception as e:
-                logger.error(f"Error processing row {idx}: {e}")
-        
-        # Save processed data
-        processed_file = "data/processed/qa_documents.json"
-        with open(processed_file, "w") as f:
-            json.dump(processed_data, f, indent=2)
-        
-        logger.info(f"Processed {len(processed_data)} QA pairs and saved to {processed_file}")
-        return processed_data
-    
-    except Exception as e:
-        logger.error(f"Error in preprocessing: {e}")
-        return None
-
-def clean_text(text):
-    """
-    Clean and normalize text.
-    
-    Args:
-        text (str): Text to clean
-        
-    Returns:
-        str: Cleaned text
-    """
-    if not text:
+        logging.error(f"Error reading PDF {pdf_path.name}: {e}")
         return ""
-    
-    # Convert to string if not already
-    text = str(text)
-    
-    # Remove excessive whitespace
-    text = " ".join(text.split())
-    
-    return text
 
-def explore_dataset(dataset_path=None):
-    """
-    Explore and analyze the dataset.
-    
-    Args:
-        dataset_path (str, optional): Path to the dataset. If None, will try to load from default location.
-        
-    Returns:
-        dict: Dataset statistics
-    """
-    try:
-        from datasets import load_dataset, load_from_disk
-        
-        if dataset_path:
-            try:
-                dataset = load_from_disk(dataset_path)
-            except:
-                logger.info(f"Could not load from disk, trying to load from Hugging Face: {dataset_path}")
-                dataset = load_dataset(dataset_path, "all-processed")
-        else:
-            try:
-                dataset = load_from_disk("data/raw/medical_qa_dataset")
-            except FileNotFoundError:
-                logger.info("Dataset not found locally, downloading from Hugging Face...")
-                dataset = load_dataset("Malikeh1375/medical-question-answering-datasets", "all-processed")
-        
-        stats = {}
-        
-        # Get dataset structure
-        for split_name, split in dataset.items():
-            stats[split_name] = {
-                "num_examples": len(split),
-                "features": list(split.features.keys()),
-                "sample": split[0] if len(split) > 0 else None
-            }
-            
-            # Column statistics
-            for col in split.features:
-                if col in split:
-                    non_null = sum(1 for item in split[col] if item)
-                    stats[split_name][f"{col}_stats"] = {
-                        "non_null": non_null,
-                        "null": len(split) - non_null
-                    }
-                    
-                    # For string columns, get length statistics
-                    if isinstance(split[col][0], str):
-                        lengths = [len(str(item)) for item in split[col] if item]
-                        if lengths:
-                            stats[split_name][f"{col}_stats"].update({
-                                "min_length": min(lengths),
-                                "max_length": max(lengths),
-                                "avg_length": sum(lengths) / len(lengths)
-                            })
-        
-        # Save statistics
-        with open("data/raw/dataset_stats.json", "w") as f:
-            json.dump(stats, f, indent=2)
-            
-        logger.info("Dataset exploration complete. Statistics saved to data/raw/dataset_stats.json")
-        return stats
-        
-    except Exception as e:
-        logger.error(f"Error exploring dataset: {e}")
-        return None
+def chunk_text(text: str, file_name: str) -> List[Dict[str, str]]:
+    """Chunks text into smaller pieces with metadata."""
+    if not text:
+        return []
 
-if __name__ == "__main__":
-    # Configure logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[logging.StreamHandler()]
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        length_function=len,
+        add_start_index=True, # Adds character start index for potential future use
     )
-    
-    # Create directories
-    Path("data/raw").mkdir(parents=True, exist_ok=True)
-    Path("data/processed").mkdir(parents=True, exist_ok=True)
-    
-    # Explore the dataset
-    explore_dataset()
-    
-    # Preprocess the dataset
-    preprocess_dataset()
+    chunks = text_splitter.split_text(text)
+
+    # Create structured chunks with metadata (source filename)
+    structured_chunks = [
+        {"page_content": chunk, "metadata": {"source": file_name}}
+        for chunk in chunks
+    ]
+    logging.info(f"Split text from {file_name} into {len(structured_chunks)} chunks.")
+    return structured_chunks
+
+
+def process_documents() -> List[Dict[str, str]]:
+    """
+    Processes all PDF documents in the specified directory:
+    1. Finds PDF files.
+    2. Extracts text from each PDF.
+    3. Chunks the extracted text.
+    Returns a list of text chunks (dictionaries with 'page_content' and 'metadata').
+    """
+    all_chunks = []
+    pdf_files = list(DOCUMENTS_DIR.glob("*.pdf"))
+
+    if not pdf_files:
+        logging.warning(f"No PDF files found in {DOCUMENTS_DIR}. Please add some documents.")
+        return []
+
+    logging.info(f"Found {len(pdf_files)} PDF files to process.")
+
+    for pdf_path in pdf_files:
+        logging.info(f"Processing: {pdf_path.name}")
+        raw_text = extract_text_from_pdf(pdf_path)
+        if raw_text:
+            chunks = chunk_text(raw_text, pdf_path.name)
+            all_chunks.extend(chunks)
+        else:
+            logging.warning(f"Skipping {pdf_path.name} due to extraction errors or empty content.")
+
+    logging.info(f"Total chunks created from all documents: {len(all_chunks)}")
+    return all_chunks
+
+if __name__ == '__main__':
+    # Example usage: Run this script directly to test processing
+    processed_chunks = process_documents()
+    if processed_chunks:
+        print(f"\nSuccessfully processed {len(processed_chunks)} chunks.")
+        # print("\nFirst few chunks:")
+        # for i, chunk in enumerate(processed_chunks[:3]):
+        #     print(f"--- Chunk {i+1} (Source: {chunk['metadata']['source']}) ---")
+        #     print(chunk['page_content'][:200] + "...") # Print start of chunk
+    else:
+        print("No chunks were processed. Check logs and data/documents folder.")

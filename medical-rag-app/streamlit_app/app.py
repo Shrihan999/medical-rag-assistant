@@ -1,142 +1,110 @@
-"""
-Main Streamlit application for Medical RAG.
-"""
-
-import streamlit as st
-import logging
+import streamlit as st # Make sure streamlit is imported
+import sys
 import os
 from pathlib import Path
-import sys
+import logging
 
-# Add the root directory to the Python path to allow imports from src
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# --- MOVE set_page_config HERE ---
+# This MUST be the first Streamlit command
+st.set_page_config(page_title="Medical RAG Chatbot", layout="wide")
+# --- End of moved section ---
 
-# Import project modules
-from src.generator import Generator
-from src.utils import log_query, create_directories, check_file_status
-from streamlit_app.components import (
-    render_header, 
-    render_sidebar, 
-    render_question_input, 
-    render_answer,
-    render_history
-)
+# Ensure the src directory is in the Python path
+# This is crucial for Streamlit to find your modules
+root_dir = Path(__file__).parent.parent
+sys.path.insert(0, str(root_dir))
+# print("sys.path:", sys.path) # Uncomment for debugging path issues
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[
-        logging.FileHandler("streamlit_app.log"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+# Set environment variable to potentially mitigate threading issues with tokenizers in Hugging Face
+# os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-def initialize_app():
-    """Initialize the application."""
-    # Create directories
-    create_directories()
-    
-    # Check file status
-    files = check_file_status()
-    
-    # Initialize session state
-    if "generator" not in st.session_state:
-        st.session_state.generator = Generator()
-    
-    if "history" not in st.session_state:
-        st.session_state.history = []
-    
-    # Check if data is ready
-    data_ready = files["processed_documents"]["exists"] and files["faiss_index"]["exists"]
-    model_ready = files["model_file"]["exists"]
-    
-    return data_ready, model_ready
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def main():
-    """Main function for the Streamlit app."""
-    st.set_page_config(
-        page_title="Medical RAG Assistant",
-        page_icon="🏥",
-        layout="wide",
-        initial_sidebar_state="expanded"
-    )
-    
-    # Initialize app
-    data_ready, model_ready = initialize_app()
-    
-    # Render UI components
-    render_header()
-    settings = render_sidebar()
-    
-    # Check if data is ready
-    if not data_ready:
-        st.error("""
-        Data not ready! Please run the following commands in the terminal:
-        ```
-        python main.py --preprocess
-        python main.py --index
-        ```
-        """)
-        return
-    
-    # Display warning if model is not ready
-    if not model_ready:
-        st.warning("""
-        Model not downloaded! Please run the following command in the terminal:
-        ```
-        python main.py --download-model
-        ```
-        
-        You can still ask questions, but the application will attempt to download
-        the model first, which may take some time.
-        """)
-    
-    # Get user question
-    question = render_question_input()
-    
-    # Process question
-    if st.button("Get Answer") and question:
-        with st.spinner("Retrieving and generating answer..."):
+try:
+    # Import components after adjusting path
+    from src.generator import RAGGenerator
+    from src.utils import INDEX_PATH, DOCSTORE_PATH, LLM_MODEL_PATH
+    # Import display_header even though set_page_config moved
+    from streamlit_app.components import display_header, display_chat_message, get_user_query
+except ImportError as e:
+    st.error(f"Failed to import necessary modules. Please ensure all files are correctly placed and requirements installed. Error: {e}")
+    st.stop() # Stop execution if imports fail
+
+
+# --- Initialization ---
+@st.cache_resource # Cache the generator instance for efficiency
+def load_rag_generator():
+    """Loads the RAG Generator instance, handling potential errors."""
+    # It's okay for st.info/success etc. to be here now
+    st.info("Initializing RAG system... (This might take a moment on first run)")
+    try:
+        # Check if necessary files exist before initializing
+        if not INDEX_PATH.exists() or not DOCSTORE_PATH.exists():
+            st.warning(f"Index file ({INDEX_PATH.name}) or docstore ({DOCSTORE_PATH.name}) not found in {INDEX_PATH.parent}. Please run indexing first (e.g., `python main.py --index`). Retrieval will be disabled.")
+            # Optionally, you could prevent the app from running entirely
+            # st.error("Cannot start: Index files missing.")
+            # st.stop()
+
+        if not LLM_MODEL_PATH.exists():
+             st.warning(f"LLM model file ({LLM_MODEL_PATH.name}) not found in {LLM_MODEL_PATH.parent}. Please download the model first (e.g., `python main.py --download-model`). Generation will fail.")
+             # Optionally, stop here too
+             # st.error("Cannot start: LLM model missing.")
+             # st.stop()
+
+        generator = RAGGenerator()
+        st.success("RAG system initialized successfully!")
+        return generator
+    except Exception as e:
+        st.error(f"Error initializing RAG system: {e}. Please check logs and setup.")
+        # Log the full traceback for debugging
+        logging.exception("RAG Generator initialization failed in Streamlit app.")
+        return None
+
+# Call load_rag_generator AFTER set_page_config
+rag_generator = load_rag_generator()
+
+# --- Streamlit UI ---
+# display_header can now be called safely
+display_header()
+
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    display_chat_message(message["role"], message["content"])
+
+# Get user input
+user_query = get_user_query()
+
+if user_query:
+    # Display user message
+    display_chat_message("user", user_query)
+    # Add user message to chat history
+    st.session_state.messages.append({"role": "user", "content": user_query})
+
+    if rag_generator is None:
+        error_message = "RAG system is not available due to initialization errors."
+        display_chat_message("assistant", error_message)
+        st.session_state.messages.append({"role": "assistant", "content": error_message})
+    else:
+        # Generate response
+        with st.spinner("Thinking..."):
             try:
-                # Generate answer
-                result = st.session_state.generator.answer_question(
-                    question,
-                    top_k=settings["top_k"],
-                    max_tokens=settings["max_tokens"],
-                    temperature=settings["temperature"]
-                )
-                
-                answer = result["answer"]
-                retrieved_docs = result.get("documents", [])
-                
-                # Add to history
-                st.session_state.history.append({
-                    "question": question,
-                    "answer": answer,
-                    "documents": retrieved_docs
-                })
-                
-                # Log query
-                log_query(question, answer, retrieved_docs)
-                
-                # Clear the question input
-                if question:
-                    # Instead of modifying session state directly, use a callback function
-                    def clear_text():
-                        st.session_state["question"] = ""
-                
+                response = rag_generator.answer_query(user_query)
+                # Display assistant response
+                display_chat_message("assistant", response)
+                # Add assistant response to chat history
+                st.session_state.messages.append({"role": "assistant", "content": response})
             except Exception as e:
-                logger.error(f"Error processing question: {e}")
-                answer = f"Error: {str(e)}"
-                retrieved_docs = []
-        
-        # Render answer and retrieved documents
-        render_answer(answer, retrieved_docs, settings["show_retrieved_docs"])
-    
-    # Render history
-    render_history()
+                 error_message = f"An error occurred while generating the response: {e}"
+                 logging.exception(f"Error processing query '{user_query}' in Streamlit app.")
+                 display_chat_message("assistant", error_message)
+                 st.session_state.messages.append({"role": "assistant", "content": error_message})
 
-if __name__ == "__main__":
-    main()
+# Add a sidebar note about potential first-time loading slowness
+st.sidebar.info("Note: The first query might take longer as the model loads into memory.")
+st.sidebar.markdown("---")
+st.sidebar.caption(f"Using model: `{LLM_MODEL_PATH.name}`")
+st.sidebar.caption(f"Index: `{INDEX_PATH.name}`")

@@ -1,131 +1,105 @@
-"""
-Indexer module for the Medical RAG application.
-Handles embedding generation and vector index creation.
-"""
-
 import logging
-import json
+import pickle
+from typing import List, Dict
+
+import faiss
 import numpy as np
-from pathlib import Path
+from sentence_transformers import SentenceTransformer
 
-logger = logging.getLogger(__name__)
+from src.utils import EMBEDDING_MODEL_NAME, INDEX_PATH, DOCSTORE_PATH, EMBEDDINGS_DIR
 
-def generate_embeddings():
-    """
-    Generate embeddings for the processed QA documents.
-    
-    Returns:
-        numpy.ndarray: The generated embeddings or None if an error occurred
-    """
-    try:
-        from sentence_transformers import SentenceTransformer
-        
-        # Load processed data
-        logger.info("Loading processed QA documents...")
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+class Indexer:
+    def __init__(self, model_name: str = EMBEDDING_MODEL_NAME):
+        """Initializes the Indexer with an embedding model."""
         try:
-            with open("data/processed/qa_documents.json", "r") as f:
-                documents = json.load(f)
-        except FileNotFoundError:
-            logger.warning("Processed documents not found. Please run preprocessing first.")
-            return None
-        
-        # Load embedding model
-        logger.info("Loading embedding model...")
-        embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-        
+            self.embedding_model = SentenceTransformer(model_name)
+            logging.info(f"Loaded embedding model: {model_name}")
+            self.dimension = self.embedding_model.get_sentence_embedding_dimension()
+            logging.info(f"Embedding dimension: {self.dimension}")
+        except Exception as e:
+            logging.error(f"Failed to load embedding model {model_name}: {e}")
+            raise
+
+    def create_index(self, chunks: List[Dict[str, str]]):
+        """
+        Creates a FAISS index from the provided text chunks.
+        Saves the index and the corresponding chunk data.
+        """
+        if not chunks:
+            logging.warning("No chunks provided to create index.")
+            return
+
+        logging.info(f"Starting index creation for {len(chunks)} chunks...")
+
+        # Extract page content for embedding
+        texts = [chunk["page_content"] for chunk in chunks]
+
         # Generate embeddings
-        logger.info(f"Generating embeddings for {len(documents)} documents...")
-        texts = [doc["content"] for doc in documents]
-        
-        # Process in batches to avoid memory issues
-        batch_size = 1000
-        all_embeddings = []
-        
-        for i in range(0, len(texts), batch_size):
-            batch_end = min(i + batch_size, len(texts))
-            logger.info(f"Processing batch {i} to {batch_end}...")
-            batch_texts = texts[i:batch_end]
-            batch_embeddings = embedding_model.encode(batch_texts, show_progress_bar=True)
-            all_embeddings.append(batch_embeddings)
-        
-        # Combine batches
-        embeddings = np.vstack(all_embeddings)
-        
-        # Save embeddings
-        logger.info("Saving embeddings...")
-        Path("data/processed/embeddings").mkdir(parents=True, exist_ok=True)
-        embeddings_path = "data/processed/embeddings/document_embeddings.npy"
-        np.save(embeddings_path, embeddings)
-        
-        # Save document IDs for retrieval
-        doc_ids = [doc["metadata"]["id"] for doc in documents]
-        with open("data/processed/embeddings/document_ids.json", "w") as f:
-            json.dump(doc_ids, f)
-        
-        # Save embedding metadata
-        embedding_metadata = {
-            "model_name": "all-MiniLM-L6-v2",
-            "dimension": embeddings.shape[1],
-            "num_documents": len(documents)
-        }
-        with open("data/processed/embeddings/metadata.json", "w") as f:
-            json.dump(embedding_metadata, f, indent=2)
-        
-        logger.info(f"Embeddings generated and saved to {embeddings_path}")
-        return embeddings
-    
-    except Exception as e:
-        logger.error(f"Error generating embeddings: {e}")
-        return None
-
-def create_vector_index():
-    """
-    Create a FAISS vector index for the embeddings.
-    
-    Returns:
-        faiss.Index: The created index or None if an error occurred
-    """
-    try:
-        import faiss
-        
-        # Load embeddings
-        logger.info("Loading embeddings...")
+        logging.info("Generating embeddings...")
         try:
-            embeddings = np.load("data/processed/embeddings/document_embeddings.npy")
-        except FileNotFoundError:
-            logger.warning("Embeddings not found. Generating embeddings first...")
-            embeddings = generate_embeddings()
-            if embeddings is None:
-                return None
-        
-        # Create FAISS index
-        logger.info("Creating FAISS index...")
-        dimension = embeddings.shape[1]
-        index = faiss.IndexFlatL2(dimension)  # L2 distance for similarity
-        index.add(embeddings.astype('float32'))
-        
-        # Save index
-        index_path = "data/processed/embeddings/faiss_index.bin"
-        faiss.write_index(index, index_path)
-        
-        logger.info(f"FAISS index created and saved to {index_path}")
-        return index
-    
-    except Exception as e:
-        logger.error(f"Error creating vector index: {e}")
-        return None
+            embeddings = self.embedding_model.encode(texts, show_progress_bar=True)
+            embeddings = np.array(embeddings).astype('float32') # FAISS requires float32
+            logging.info(f"Generated {len(embeddings)} embeddings.")
+        except Exception as e:
+            logging.error(f"Error generating embeddings: {e}")
+            return
 
-if __name__ == "__main__":
-    # Configure logging
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        handlers=[logging.StreamHandler()]
-    )
-    
-    # Generate embeddings
-    embeddings = generate_embeddings()
-    
-    # Create index
-    if embeddings is not None:
-        create_vector_index()
+        # Create FAISS index
+        # Using IndexFlatL2 - simple L2 distance search
+        # For larger datasets, consider more advanced index types like IndexIVFFlat
+        index = faiss.IndexFlatL2(self.dimension)
+        index.add(embeddings)
+        logging.info(f"FAISS index created. Total vectors in index: {index.ntotal}")
+
+        # Save the index and the chunks (docstore)
+        try:
+            EMBEDDINGS_DIR.mkdir(parents=True, exist_ok=True) # Ensure directory exists
+            faiss.write_index(index, str(INDEX_PATH))
+            logging.info(f"FAISS index saved to {INDEX_PATH}")
+
+            # Save the corresponding chunks (mapping index ID to chunk)
+            with open(DOCSTORE_PATH, "wb") as f:
+                pickle.dump(chunks, f)
+            logging.info(f"Document chunks (docstore) saved to {DOCSTORE_PATH}")
+
+        except Exception as e:
+            logging.error(f"Error saving index or docstore: {e}")
+
+def build_index(processed_chunks: List[Dict[str, str]]):
+    """Helper function to build and save the index."""
+    if not processed_chunks:
+        logging.error("Cannot build index: No processed chunks provided.")
+        return
+
+    indexer = Indexer()
+    indexer.create_index(processed_chunks)
+
+if __name__ == '__main__':
+    # Example Usage: Assumes you have processed chunks (e.g., from data_processor)
+    # In a real script (like main.py), you'd pass the output of process_documents here.
+
+    # Dummy data for testing standalone
+    dummy_chunks = [
+        {"page_content": "The quick brown fox jumps over the lazy dog.", "metadata": {"source": "dummy1.txt"}},
+        {"page_content": "Medical diagnosis requires careful examination.", "metadata": {"source": "dummy2.txt"}},
+        {"page_content": "Artificial intelligence is transforming healthcare.", "metadata": {"source": "dummy3.txt"}},
+    ]
+    print("Building index with dummy data...")
+    build_index(dummy_chunks)
+    print(f"Index built. Check {INDEX_PATH} and {DOCSTORE_PATH}")
+
+    # Test loading (similar to what retriever would do)
+    if INDEX_PATH.exists() and DOCSTORE_PATH.exists():
+        print("\nTesting index loading...")
+        try:
+            index = faiss.read_index(str(INDEX_PATH))
+            with open(DOCSTORE_PATH, "rb") as f:
+                docstore = pickle.load(f)
+            print(f"Successfully loaded index with {index.ntotal} vectors.")
+            print(f"Successfully loaded docstore with {len(docstore)} documents.")
+        except Exception as e:
+            print(f"Error loading index/docstore: {e}")
+    else:
+        print("\nIndex files not found, skipping loading test.")
