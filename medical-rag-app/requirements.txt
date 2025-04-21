@@ -1,0 +1,10 @@
+streamlit
+datasets
+sentence-transformers
+faiss-cpu
+huggingface-hub
+transformers
+torch
+llama-cpp-python
+numpy
+pandas
