@@ -1,0 +1,522 @@
+Prevention or Delay of Diabetes and AssociatedComorbidities: Standards of Care in Diabetes —2025 Diabetes Care 2025;48(Suppl.
+1):S50 –S58|https://doi.org/10.2337/dc25-S003American Diabetes Association Professional Practice Committee * The American Diabetes Association (ADA) “Standards of Care in Diabetes ”in- cludes the ADA ’s current clinical practice recommendations and is intended to provide the components of diabetes care, general treatment goals and guide- lines, and tools to evaluate quality of care.
+Members of the ADA ProfessionalPractice Committee, an interprofessional expert committee, are responsible forupdating the Standards of Care annually, or more frequently as warranted.
+For adetailed description of ADA standards, statements, and reports, as well as theevidence-grading system for ADA ’s clinical practice recommendations and a full list of Professional Practice Committee members, please refer to Introductionand Methodology.
+Readers who wish to comment on the Standards of Care are invited to do so at professional.diabetes.org/SOC.
+For guidelines related to screening for increased risk for type 1 diabetes, prediabe- tes and type 2 diabetes, and other forms of diabetes, please refer to Section 2, “Diagnosis and Classi ﬁcation of Diabetes.
+”For guidelines related to screening, diag- nosis, and management of type 2 diabetes in youth, please refer to Section 14 “Children and Adolescents .” Recommendations 3.1In people with prediabetes, monitor for the development of type 2 diabetes at least annually; modify frequency of testing based on individual risk assess- ment.
+E 3.2In people with presymptomatic type 1 diabetes, monitor for disease pro- gression using A1C approximately every 6 months and 75-g oral glucose toler-ance test (i.e., fasting and 2-h plasma glucose) annually; modify frequency ofmonitoring based on individual risk assessment based on age, number andtype of autoantibodies, and glycemic metrics.
+E Screening for prediabetes and type 2 diabetes risk through an assessment of risk factors ( Table 2.5 ) or with an assessment tool, such as the American Diabetes As- sociation risk test, which can be used by either a layperson or a health care profes- sional ( Fig.
+2.2 ), is recommended to guide whether to perform a diagnostic test for prediabetes ( Table 2.2 ) and type 2 diabetes ( Table 2.1 ) (see Section 2, “Diagnosis and Classi ﬁcation of Diabetes ”).
+Testing high-risk adults for prediabetes is war- ranted because the laboratory assessment is safe and reasonable in cost.
+In addi- tion, substantial time exists before the development of type 2 diabetes and its*A complete list of members of the American Diabetes Association Professional Practice Committeecan be found at https://doi.org/10.2337/dc25-SINT.
+Duality of interest information for each author is available at https://doi.org/10.2337/dc25-SDIS.
+Suggested citation: American Diabetes Association Professional Practice Committee.
+Prevention ordelay of diabetes and associated comorbidities:Standards of Care in Diabetes —2025.
+Diabetes Care 2025;48(Suppl.
+1):S50 –S58 © 2024 by the American Diabetes Association.
+Readers may use this article as long as thework is properly cited, the use is educationaland not for pro ﬁt, and the work is not altered.
+More information is available at https://www.diabetesjournals.org/journals/pages/license.3.
+PREVENTION OR DELAY OF DIABETESS50 Diabetes Care Volume 48, Supplement 1, January 2025Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 complications during which one can inter- vene.
+Once identi ﬁed, several effective therapeutic approaches exist that can de-lay type 2 diabetes in those with prediabe- tes with an A1C 5.7 –6.4% (39 –47 mmol/ mol), impaired glucose tolerance (IGT) on75-g oral glucose tolerance test (OGTT), or impaired fasting glucose (IFG).
+The util- ity of screening with A1C for prediabe-tes and diabetes may be limited in the presence of certain hemoglobinopa- thies and conditions that affect redblood cell turnover ( Table 2.3 ).
+See Sec- tion 2, “Diagnosis and Classi ﬁcation of Diabetes, ”and Section 6, “Glycemic Goals and Hypoglycemia, ”for additional details on the appropriate use and limitations of A1C testing.
+Three distinct stages of type 1 diabetes have been de ﬁned, with symptomatic type 1 diabetes being stage 3 ( Table 2.4 ).
+In individuals at risk for developingclinical type 1 diabetes, younger age of seroconversion (particularly under age 3 years), the total number of diabetes-related autoantibodies (1), and the de- velopment of autoantibodies against islet antigen 2 (IA-2) have been associatedwith a more rapid progression to clinical type 1 diabetes.
+While continuous glu- cose monitoring can predict progressionto overt diabetes in children with autoan- tibodies (2), OGTT-based metrics appear to be better at predicting progressioncompared with continuous glucose moni- toring (3).
+The decision to perform an O G T Tm a yd e p e n do ns u c hf a c t o r sa se l i -gibility and interest for stage-speci ﬁct r e a t - ments, participation in clinical research, availability, and the burden of testing.
+Aconsensus guidance provides expert rec- ommendations on what should be moni- tored and how often in people withpresymptomatic type 1 diabetes (4).
+LIFESTYLE BEHAVIOR CHANGE FOR TYPE 2 DIABETESPREVENTION Recommendations 3.3Refer adults with overweight or obesity at high risk of type 2 diabe- tes, as seen in the Diabetes Preven-tion Program (DPP), to an intensivelifestyle behavior change program to achieve and maintain a weight reduc- tion of at least 7% of initial bodyweight through healthy reduced-caloriediet and $150 min/week of moder- ate-intensity physical activity.
+A3.4Prescribe an eating pattern known to be effective in preventing type 2 dia- betes to individuals with prediabetes.
+A variety of eating patterns, such as Mediterranean style, intermittent fast- ing, and low carbohydrate, have shownbeneﬁt.B 3.5Given the cost-effectiveness of life- style behavior modi ﬁcation programs for diabetes prevention, such diabetes prevention programs should be offered to adults at high risk of type 2 diabetes.
+A Diabetes prevention programs should be covered by third-party payors, andinconsistencies in access should be ad- dressed.
+E 3.6 Based on individual preference, certiﬁed technology-assisted diabetes prevention programs may be effective in preventing type 2 diabetes and should be considered.
+B The Diabetes Prevention Program Several major randomized controlled tri- als, including the Diabetes PreventionProgram (DPP) trial (5), the Finnish Diabe- tes Prevention Study (DPS) (6), and the Da Qing Diabetes Prevention Study (DaQing study) (7), demonstrate that life- style/behavioral intervention with an in- dividualized reduced-calorie meal plan is highly effective in preventing or delaying type 2 diabetes and improving other car-diometabolic risk factors (such as blood pressure, lipids, and in ﬂammation) (8).
+The strongest evidence for diabetes pre- v e n t i o ni nt h eU .
+S .c o m e sf r o mt h eD P P trial (5).
+The DPP demonstrated that in-tensive lifestyle intervention could reduce the risk of incident type 2 diabetes by 58% over 3 years.
+Follow-up of threelarge trials of lifestyle intervention for dia- betes prevention showed sustained re- duction in the risk of progression to type 2 diabetes: 39% reduction at 30 years in the Da Qing study (9), 43% reduction at 7 yearsin the Finnish DPS (6), and 34% reduction at 10 years (10) and 27% reduction at 15 years (11) in the U.S. Diabetes Prevention Program Outcomes Study (DPPOS).
+The DPP lifestyle intervention was a goal-based intervention.
+All participants were given the same weight loss and physical activity goals, but individualiza- tion was permitted to achieve the goals(12).
+The two major goals of the DPP in- tensive lifestyle intervention were to achieve and maintain a minimum of 7%weight loss and to partake in 150 min of moderate-intensity physical activity perweek, such as brisk walking.
+Althoughweight loss was the most important factorin reducing the risk of incident diabetes, achieving the behavioral goal of at least 150 min of physical activity per week,even without achieving the weight lossgoal, reduced the incidence of type 2 dia- betes by 44% (13).
+The 7% weight loss goal was selected because it was feasible to achieve andmaintain and likely to lessen the risk of de-veloping diabetes (as well as improve other cardiometabolic risk factors).
+Partici- pants were encouraged to achieve the$7% weight loss during the ﬁrst 6 months of the intervention.
+Further analysis sug- gests higher bene ﬁt for prevention of dia- betes with at least 7 –10% weight loss with lifestyle interventions (13).
+The recom-mended pace of weight loss was 1 –2 lb/week.
+Calorie goals were calculated by estimating the daily calories neededto maintain the participant ’s initial weight and subtracting 500 –1,000 calories/day (depending on initial body weight).
+The initial focus of the nutrition interventionwas on reducing total fat rather than cal-ories.
+After several weeks, the conceptsof calorie balance and the need to restrict calories and fat were introduced (12).
+The goal for physical activity was selected to approximate at least 700 kcal/week ex-penditure from physical activity.
+For easeof translation, this goal was described as at least 150 min of moderate-intensity physical activity per week, similar in in-tensity to brisk walking.
+Participants wereencouraged to distribute their activity throughout the week with a minimum frequency of three times per week andat least 10 min per session.
+A maximumof 75 min of strength training could be applied toward the total 150 min/week physical activity goal (12).
+To implement the weight loss and phys- ical activity goals, the DPP used an individ-ual model of treatment rather than a group-based approach.
+This choice was based on a desire to intervene before par-ticipants had the possibility of developingdiabetes or losing interest in the program.
+The individual approach also allowed for the tailoring of interventions to re ﬂect the diversity of the population (12).
+The DPP intervention was administered a sas t r u c t u r e dc o r ec u r r i c u l u mf o l l o w e d by a ﬂexible maintenance program of individual counseling, group sessions,diabetesjournals.org/care Prevention or Delay of Diabetes S51Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 motivational campaigns, and restart opportunities.
+The 16-session core cur- riculum was completed within the ﬁrst 24 weeks of the program.
+It included ses- sions on lowering calories, increasing physical activity, self-monitoring, main-taining healthy lifestyle behaviors (such as how to choose healthy food options when eating out), and guidance on manag-ing psychological, social, and motivationalchallenges (12).
+While the DPP interventions were suc- cessful in preventing or delaying the onset of type 2 diabetes, long-term effects onclinically meaningful events (microvascu- lar and macrovascular disease) have not been established (14).
+However, there ispotential bene ﬁtw i t h o u tt h er i s ko fh a r m with these interventions.
+Nutrition Nutrition counseling for weight loss in the DPP lifestyle intervention arm included a reduction of total fat and calories (5,12,13).However, evidence suggests that there is not an ideal percentage of calories from carbohydrate, protein, and fat for all peo-ple to prevent diabetes; therefore, macro- nutrient distribution should be based on an individualized assessment of currenteating patterns, preferences, and meta-bolic goals (15).
+Based on other trials, a va- riety of eating patterns (15,16) may also be appropriate for individuals with prediabe-tes (15), including Mediterranean-style and low-carbohydrate eating plans (17 –19).
+Ob- servational studies have also shown thatvegetarian, plant-based (may include some animal products), and Dietary Approaches to Stop Hypertension (DASH) eating pat-terns are associated with a lower risk ofdeveloping type 2 diabetes (20 –23).
+Ev- idence suggests that the overall quality of food consumed (as measured by theHealthy Eating Index, Alternative Healthy Eating Index, and DASH score), with an emphasis on whole grains, legumes,nuts, fruits, and vegetables and minimal reﬁned and processed foods, is also asso- ciated with a lower risk of type 2 diabetes(22,24,25).
+As is the case for those withdiabetes, individualized medical nutrition therapy (see Section 5, “Facilitating Positive Health Behaviors and Well-beingto Improve Health Outcomes, ”for more detailed information) is effective in low- ering A1C in individuals diagnosed withprediabetes (26).Physical Activity Moderate-intensity physical activity, such as brisk walking for 150 min/week, has shown bene ﬁcial effects in those with pre- diabetes (5).
+Similarly, moderate-intensityphysical activity has been shown to im-prove insulin sensitivity and reduce ab-dominal fat in children and young adults(27,28).
+Health care professionals are en-couraged to promote a DPP-style pro- gram to all individuals who have been identi ﬁed to be at an increased risk of type 2 diabetes.
+In addition to aerobic ac-tivity, a physical activity plan designed toprevent diabetes may include resistancetraining (12,29).
+Breaking up prolongedsedentary time may also be encouraged, as it lowers postprandial glucose levels (30).
+The effects of physical activity ap-pear to extend to the prevention of ges-tational diabetes mellitus (GDM) (31).
+Sleep Characteristics Associated With Increased Risk of Type 2 Diabetes Sleep occupies approximately one-third of the day for most people and modu-lates a variety of metabolic, endocrine,and cardiovascular processes (32).
+Thelatest ADA-EASD consensus report on management of hyperglycemia highlights sleep as a central component in themanagement of prediabetes and type 2diabetes, placing it, for the ﬁrst time, on the same level as other lifestyle behav-iors (e.g., physical activity and nutrition)(33).
+Sleep can be characterized using three key constructs: quantity, quality, and timing (i.e., chronotype).
+There isnow established evidence for a U-shapedassociation between sleep duration andtype 2 diabetes incidence, with the nadirtypically occurring at 7 h per day, withshort (typically de ﬁned as <6h )a n d long (typically de ﬁned as >9 h) sleep du- ration having up to a 50% increase in therisk of type 2 diabetes, including progres-sion from prediabetes (33).
+Sleep qualityhas recently been de ﬁned as “an individ- ual’s self-satisfaction with all aspects of the sleep experience ”(34,35).
+Poor sleep quality was associated with a 40 –84% in- creased risk of developing type 2 diabe-tes in a meta-analysis (36).
+Chronotypepreference has been linked with manychronic diseases, including type 2 diabe-tes.
+For example, for those with a prefer- ence for evenings (i.e., going to bed late and getting up late), there was a 2.5-foldhigher odds ratio for type 2 diabetesthan for those with a preference formornings (i.e., going to bed early and getting up early), independent of sleep duration and sleep suf ﬁciency (37).
+Delivery and Dissemination of Lifestyle Behavior Change for Diabetes Prevention Because the intensive lifestyle interven- tion in the DPP was effective in prevent-ing type 2 diabetes among those at high risk for the disease and lifestyle behavior change programs for diabetes preventionwere shown to be cost-effective, broaderefforts to disseminate scalable lifestyle behavior change programs for diabetes prevention with coverage by third-partypayors ensued (38 –42).
+Group delivery of DPP content in community or primary care settings has demonstrated the po-tential to reduce overall program costswhile still producing weight loss and dia- betes risk reduction (43,44).
+The Centers for Disease Control and Pre- vention (CDC) developed the National Dia-betes Prevention Program (National DPP), aresource designed to bring such evidence- based lifestyle change programs for pre- venting type 2 diabetes to communities(cdc.gov/diabetes-prevention).
+This online resource includes locations of CDC-recog- nized diabetes prevention lifestyle changeprograms (cdc.gov/diabetes/prevention/ﬁnd-a-program.html).
+To be eligible for this program, individuals must have a BMI in the overweight range and be atrisk for diabetes based on laboratory test- ing, a previous diagnosis of GDM, or a positive risk test (cdc.gov/prediabetes/risktest/).
+During the ﬁrst 4 years of im- plementation of the CDC ’sN a t i o n a lD P P , 36% achieved the 5% weight loss goal (45).
+The CDC has also developed the Dia-betes Prevention Impact Tool Kit (nccd.
+cdc.gov/toolkit/diabetesimpact) to help organizations assess the economics ofproviding or covering the National DPP(46).
+To expand preventive services using a cost-effective model, the Centers for Medicare & Medicaid Services expandedMedicare reimbursement coverage for the National DPP to organizations recog- nized by the CDC that become Medicaresuppliers for this service (innovation.cms.gov/innovation-models/medicare-diabetes- prevention-program).
+The locations of Medicare DPPs are available online atinnovation.cms.gov/innovation-models/ medicare-diabetes-prevention-program/ mdpp-map.
+To qualify for Medicarecoverage, individuals must have BMIS52 Prevention or Delay of Diabetes Diabetes Care Volume 48, Supplement 1, January 2025Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 >25 kg/m2(or BMI >23 kg/m2if self- identi ﬁed as Asian) and glycemic testing consistent with prediabetes in the lastyear.
+Medicaid DPP is also expandingon a state-by-state basis.
+While CDC-recognized behavioral counseling programs, including Medi-care DPP services, have met minimumquality standards and are reimbursedby many payors, lower retention rates have been reported for younger adults and racial and ethnic minoritized popu-lations (47).
+Therefore, other programsand modalities of behavioral counsel- ing for diabetes prevention may also be appropriate and ef ﬁcacious based on individual preferences and availabil-ity.
+The use of community health work- ers to support DPP-like interventions has been shown to be effective andcost-effective (48,49) (see Section 1,“Improving Care and Promoting Health in Populations, ”for more information).
+The use of community health workers may facilitate the adoption of behaviorchanges for diabetes prevention whilebridging barriers related to social deter- minants of health.
+However, coverage by third-party payors remains limited.Counseling by a registered dietitian/nutritionist (RDN) has been shown to help individuals with prediabetes improve eating habits, increase physical activity, andachieve 7 –10% weight loss (15,50 –52).
+In- dividualized medical nutrition therapy (seeSection 5, “Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes, ”for more detailed information) is also effective in improv-ing glycemia in individuals diagnosed with prediabetes (26,50).
+Furthermore, trials involving medical nutrition ther-apy for adults with prediabetes foundsigniﬁcant reductions in weight, waist circumference, and glycemia (23,26).
+Individuals with prediabetes can bene ﬁt from referral to an RDN for individualizedmedical nutrition therapy upon diagnosisand at regular intervals throughout their treatment plan (51,53).
+Other health care professionals, such as pharmacists and dia-betes care and education specialists, mayalso be considered for diabetes prevention efforts (53,54).
+Technology-assisted programs may ef- fectively deliver a DPP-like intervention(55–58).
+A digital diabetes prevention program improved cardiovascular risk at 4m o n t h sb u tn o ta t1 2m o n t h s( 5 9 ) .
+Such technology-assisted programs maydeliver content through smartphones, web-based applications, and telehealthand may be an acceptable and ef ﬁca- cious option to bridge barriers, particu- larly for individuals with low income and/or in rural locations; however, notall technology-assisted programs are ef-fective (55,60 –62).
+The CDC Diabetes Prevention Recognition Program (DPRP) (cdc.gov/diabetes/prevention/requirements-recognition.htm) certi ﬁes technology- assisted modalities as effective vehicles for DPP-based interventions; such pro-grams must use an approved curricu-lum, include interaction with a coach, a n da t t a i nt h eD P Po u t c o m e so fp a r t i c i - pation, physical activity reporting, andweight loss.
+Health care professionalsshould consider referring adults with pre- diabetes to certi ﬁed technology-assisted programs.
+PHARMACOLOGIC INTERVENTIONS TO DELAY TYPE 2 DIABETES Recommendations 3.7Metformin for the prevention of type 2 diabetes should be consideredin adults at high risk of type 2 diabetes, as typi ﬁed by the DPP , especially those aged 25 –59 years with BMI $35 kg/m 2, higher fasting plasma glucose (e.g., $110 mg/dL [ $6 mmol/L]), and higher A1C (e.g., $6.0% [$42 mmol/mol]), and in individuals with prior gestational diabetes mellitus.
+A 3.8Long-term use of metformin may be associated with vitamin B12 de ﬁ- ciency; consider periodic assessment of vitamin B12 level in metformin- treated individuals, especially in thosewith anemia or peripheral neuropa- thy.B Because weight loss through behavior changes in nutrition and physical activity may not be suf ﬁcient on their own and can be dif ﬁcult to maintain long term (10), some people at high risk of type 2 diabe- tes may bene ﬁt from additional support and pharmacotherapeutic options.
+Vari-ous pharmacologic agents used to treat di-abetes have been evaluated for diabetes prevention.
+Metformin, a-glucosidase in- hibitors, incretin receptor agonists (e.g.,liraglutide and semaglutide), thiazolidine-diones, and insulin have been shown to lower the incidence of diabetes in speci ﬁc populations (63 –68), whereas diabetesprevention was not seen with nateglinide (69).
+In the DPP, weight loss was an impor- tant factor in reducing the risk of pro-gression, with every kilogram of weight loss conferring a 16% reduction in risk of progression over 3.2 years (13).
+In in-dividuals with previous history of GDM,the risk of type 2 diabetes increased by18% for every 1 unit BMI above the pre- conception baseline (70).
+Several medi- cations evaluated for weight loss (e.g.,orlistat, phentermine and topiramate,liraglutide, semaglutide, and tirzepatide) have been shown to decrease the inci- dence of type 2 diabetes in those withprediabetes (68,71 –73).
+Studies of other pharmacologic agents have shown some ef ﬁcacy in diabetes prevention with valsartan or testoster- one (74,75) but no ef ﬁcacy in preventing diabetes with ramipril or anti-in ﬂamma- tory drugs (75 –78).
+Vitamin D therapy has recently been advocated by the U.S. Endocrine Society to prevent progressionof high-risk prediabetes to type 2 diabetesin adults (79).
+Three randomized con-trolled trials have been designed and con- ducted to test whether vitamin D therapy in combination with lifestyle modi ﬁcation reduces the risk of developing diabetes inadults with high-risk prediabetes (i.e., IGT or meeting two or three ADA prediabetes glycemic criteria [fasting glucose, A1C, 2-hglucose after a 75-g OGTT]): the Tromsøstudy in Norway, with 511 participants; the Vitamin D and Type 2 Diabetes (D2d) study in the U.S., with 2,423 participants;and the Diabetes Prevention with ActiveV i t a m i nD( D P V D )s t u d yi nJ a p a n ,w i t h1,256 participants (80 –82).
+Although vita- min D therapy modestly reduced the risk of developing diabetes compared with theplacebo to a nearly identical degree in allthree trials, none of the results of the indi- vidual studies were statistically signi ﬁcant (reportedly due to insuf ﬁcient power).
+Subsequently, several meta-analyses re-lated to these (and other smaller) studies have suggested a modest potential bene ﬁt in speci ﬁc populations (83,84).
+However, there are several concerns and uncertain- ties regarding recommending widespreadvitamin D therapy for adults with high- risk prediabetes.
+1) The recommended vitamin D dose is unclear.
+The includedtrials used varying dosages of vitamin Dthat were higher than the recommended daily allowance for this population (i.e., 600 IU/day for those aged 18 –70 yearsdiabetesjournals.org/care Prevention or Delay of Diabetes S53Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 and 800 IU for those older than 70 years).
+Due to this variability, it is not possible to recommend a speci ﬁc vitamin D dosage for diabetes prevention.
+2) The bene ﬁt-to- risk ratio of vitamin D therapy for high-riskprediabetes remains uncertain.
+Although there was no evidence of safety concerns with vitamin D therapy in study partici-pants with prediabetes, the numbers ofadults included in these studies are smallcompared with the potentially many mil-lions of adults with prediabetes in the U.S. and globally who may have risk of adverse events if treated with unspeci ﬁed doses of vitamin D without monitoring blood25-hydroxy vitamin D levels.
+In light ofthese and other issues, further research is warranted to better de ﬁne the popu- lation characteristics and determine thedose and clinical pathway of vitamin Dtherapy for diabetes prevention.
+No pharmacologic agent has been ap- proved by the U.S. Food and Drug Admin-istration for prevention of type 2 diabetes.
+The risk versus bene ﬁt of each medication in support of person-centered goals mustbe weighed in addition to cost and burdenof administration.
+Additionally, pharmaco-logic interventions must be long-termbecause of the waning of effect after stopping the medication.
+Metformin Metformin has the most safety data as a pharmacologic therapy for diabetesprevention (85).
+Metformin was overallless effective than lifestyle modi ﬁcation in the DPP , though group differences at-tenuated over time in the DPPOS (11), and metformin may be cost-saving over a 10-year period (40).
+In the DPP, metforminwas as effective as lifestyle modi ﬁcation in participants with BMI $35 kg/m 2and in younger participants aged 25 –44 years (5).
+In individuals with a history of GDM in the DPP, metformin and intensive lifestylemodiﬁcation led to an equivalent 50% re- duction in diabetes risk (86).
+Both inter-ventions remained highly effective duringa 10-year follow-up period (87).
+By the time of the 15-year follow-up (DPPOS), ex- ploratory analyses demonstrated that par-ticipants with a higher baseline fastingglucose ( $110 mg/dL [ $6 mmol/L] vs. 95–109 mg/dL [5.3 –5.9 mmol/L]), those with ah i g h e rA 1 C( 6 .
+0 –6.4% [42 –46 mmol/mol] vs.<6.0% [<42 mmol/mol]), and individ- uals with a history of GDM (vs. individualswithout a history of GDM) experiencedhigher risk reductions with metformin, identifying subgroups of participants thatmay bene ﬁt the most from metformin (88).
+In the Indian Diabetes PreventionProgram (IDPP-1), metformin and lifestyleintervention reduced diabetes risk simi-larly at 30 months; however, the lifestyleintervention in IDPP-1 was less intensivethan that in the DPP (89).
+Based on ﬁnd- ings from the DPP, metformin should berecommended as an option for high-risk individuals (e.g., younger individuals, those with history of GDM, or those with BMI$35 kg/m 2).
+Decreased vitamin B12 levels are a known consequence of long-term treat-ment with metformin (90).
+Periodic as-sessment of vitamin B12 level in thosetaking metformin chronically should beconsidered to check for possible de ﬁ- ciency, especially in those receiving ahigher dose (e.g.
+$1,500 mg/day) (91) or longer treatment duration and in those with existing risk factors.
+VitaminB12 serum levels should be tested if de-ﬁciency is suspected, such as in people with anemia or peripheral neuropathy(90,92) (see Section 9, “Pharmacologic Approaches to Glycemic Treatment, ”for more details).
+The effect of metforminon vitamin B12 increases with time (93),with a higher risk for vitamin B12 de ﬁ- ciency (<200 pg/mL [ <150 pmol/L]) noted at 4 –5 years of treatment.
+A person who has been taking metformin for more than4 years or is at risk for vitamin B12 de ﬁ- ciency for other reasons (e.g., vegan die-tary pattern, previous gastric/small bowelsurgery) should be monitored for vitaminB12 de ﬁciency annually (94).
+PREVENTION OF VASCULAR DISEASE AND MORTALITY Recommendations 3.9 Prediabetes is associated with heightened cardiovascular risk; there-fore, screening for and treatment of modiﬁable risk factors for cardiovascu- lar disease are suggested.
+B 3.10 Statin therapy may increase the risk of type 2 diabetes in people at high risk of developing type 2 diabe- tes.
+In such individuals, glucose statusshould be monitored regularly and di-abetes prevention approaches rein- forced.
+It is not recommended that statins be avoided or discontinued forthis adverse effect.
+B3.11 In people with a history of stroke and evidence of insulin resistance andprediabetes, pioglitazone may be con- sidered to lower the risk of stroke or myocardial infarction.
+However, this beneﬁt needs to be balanced with the increased risk of weight gain, edema,and fractures.
+ALower doses may mit- igate the risk of adverse effects but may be less effective.
+C People with prediabetes often have other cardiovascular risk factors, including hy- pertension and dyslipidemia (95), and areat increased risk for cardiovascular disease(96,97).
+Evaluation for tobacco use and re- ferral for tobacco cessation should be part of routine care for those at risk for diabe-tes.
+Of note, the years immediately follow-ing smoking cessation may represent a time of increased risk for diabetes (98,99), and individuals should be monitoredfor diabetes development and receive evidence-based lifestyle behavior change for diabetes prevention as described inthis section.
+See Section 5, “Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes, ”for more detailed information.
+The lifestyle inter-ventions for weight loss in study popula-tions at risk for type 2 diabetes have s h o w nar e d u c t i o ni nc a r d i o v a s c u l a rr i s k factors and the need for medications usedto treat these cardiovascular risk factors (100,101).
+The lifestyle intervention in the Da Qing study was associated with lower-ing cardiovascular disease and mortalityat 23 and 30 years of observational follow-up (7,9).
+Treatment goals and ther- apies for hypertension and dyslipidemia inthe primary and secondary prevention ofcardiovascular disease for people with prediabetes should be based on their level of cardiovascular risk.
+Increased vigilanceis warranted to identify and treat these and other cardiovascular disease risk fac- tors (102).
+Statin use increases risk of dia-betes (103 –105).
+In the DPP, statin use was associated with greater diabetes risk irre- spective of the treatment group (pooled hazard ratio [HR] [95% CI] for incident dia-betes 1.36 [1.17 –1.58]) (104).
+In trials of primary and secondary prevention of cardiovascular disease, cardiovascularand mortality bene ﬁts of statin therapy exceed the risk of diabetes (106,107), suggesting a highly favorable bene ﬁt-to- harm balance with statin therapy.
+Hence,discontinuation of statins due to concernsS54 Prevention or Delay of Diabetes Diabetes Care Volume 48, Supplement 1, January 2025Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 of diabetes risk is not recommended in this population.
+Cardiovascular outcome trials in people without diabetes also inform risk reduc-tion potential in people without diabetes at increased cardiometabolic risk (see Section 10, “Cardiovascular Disease and Risk Management, ”for more details).
+The IRIS (Insulin Resistance Interventionafter Stroke) trial of people with a recent (<6 months) stroke or transient ischemic attack, without diabetes but with insulinresistance (as de ﬁned by a HOMA of in- sulin resistance index of $3.0), evaluated pioglitazone (goal dose of 45 mg daily) compared with placebo.
+At 4.8 years, therisk of stroke or myocardial infarction, aswell as the risk of diabetes, was lower inthe pioglitazone group than in the pla- cebo group; weight gain, edema, and fractures were higher in the pioglitazonetreatment group (108 –110).
+Lower doses may mitigate the adverse effects but may also be less effective (111).
+PERSON-CENTERED CARE GOALS Recommendations 3.12 In adults with overweight or obesity at high risk of type 2 diabetes, care goals should include weight loss and maintenance, minimizing the pro- gression of hyperglycemia, and atten-tion to cardiovascular risk.
+B 3.13 Pharmacotherapy (e.g., for weight management, minimizing the progres- sion of hyperglycemia, and cardiovas-cular risk reduction) should be con- sidered to support person-centered care goals.
+B 3.14 More intensive preventive ap- proaches should be considered in indi- viduals who are at particularly high risk of progression to diabetes, includingindividuals with BMI $35 kg/m 2, those at higher glucose levels (e.g., fasting plasma glucose 110 –125 mg/dL [6.1–6.9 mmol/L], 2-h postchallenge glu- cose 173 –199 mg/dL [9.6 –11.0 mmol/L], and A1C $6.0% [$42 mmol/mol]), and individuals with a history of gesta- tional diabetes mellitus.
+A Individualized risk-to-bene ﬁt ratio should be considered in screening, intervention,and monitoring to lower the risk of type 2 diabetes and associated comorbidities.
+Multiple factors, including age, BMI, andother comorbidities, may in ﬂuence therisk of progression to diabetes and life- time risk of complications (112,113).
+Pre- diabetes is associated with increased cardiovascular disease and mortality (97), which emphasizes the importance of attending to cardiovascular risk in this population.
+However, the new diagnosis of prediabetes in older adults (aged >70 years) is less relevant for progres- sion to diabetes, because regression to normoglycemia or death was more fre- quent than progression to diabetes in the Atherosclerosis Risk in Communities (ARIC) study (113).
+In the DPP, which enrolled high-risk indi- viduals with IGT, elevated fasting glucose, and elevated BMI, the crude incidence of diabetes within the placebo group was 11 cases per 100 person-years, with a cu- mulative 3-year incidence of diabetes of 29% (5).
+Characteristics of individuals in the DPP/DPPOS who were at particularly high risk of progression to diabetes (crude incidence of diabetes 14 –22 cases per 100 person-years) included BMI $35 kg/m 2, higher glucose levels (e.g., fasting plasma glucose 110 –125 mg/dL [6.0 –6.9 mmol/L], 2-h postchallenge glucose 173 –199 mg/dL [9.6–11.0 mmol/L], A1C $6.0% [$42 mmol/mol]), or a history of GDM (5,86,87).In contrast, in the community-based ARIC study, observational follow-up of adults with mean age 75 years with laboratory evidence of prediabetes (based on A1C 5.7–6.4% [39 –47 mmol/mol] and/or fasting glucose 100 –125 mg/dL [5.6 –6.9 mmol/L]), but not meeting speci ﬁc BMI criteria, found lower progression to diabetes over 6 years: 9% of those with A1C-de ﬁned prediabetes and 8% of those with IFG (113).
+Thus, it is important to individualize the risk-to-bene ﬁt ratio of intervention and consider person-centered goals.
+Risk mod- els have generally found a higher bene ﬁt of the intervention in those at highest risk ( 1 3 ) .D i a b e t e sp r e v e n t i o nt r i a l sa n do b s e r - vational studies highlight key principles that may guide person-centered goals.
+In the DPP, which enrolled a high-risk popu- lation meeting criteria for overweight or obesity, weight loss was an important me- diator of diabetes prevention or delay, with greater metabolic bene ﬁt seen with greater weight loss (13,114).
+In the DPP/ DPPOS, progression to diabetes, duration of diabetes, and mean level of glycemia were important determinants of the de- velopment of microvascular complications(11).
+Achieving normal glucose regulation, even once, during the DPP was associatedwith a lower risk of diabetes and lowerrisk of microvascular complications irre-spective of the treatment arm (115).
+Ob-servational follow-up of the Da Qing studyalso showed that regression from IGT tonormal glucose tolerance or remainingwith IGT rather than progressing to type 2diabetes at the end of the 6-year interven-tion trial resulted in signi ﬁcantly lower risk of cardiovascular disease and microvascu-lar disease over 30 years (116).
+Pharmacotherapy for weight manage- ment and cardiovascular risk reduction(see Section 10, “Cardiovascular Disease and Risk Management, ”for more details) can be considered to support individual- ized person-centered goals, with more in- tensive preventive approaches consideredin individuals at high risk of progression.
+PREVENTION OR DELAY OF SYMPTOMATIC TYPE 1 DIABETES Lifestyle and Type 1 Diabetes Progression Observational studies suggest that in those with islet autoantibodies, factorsthat may increase b-cell demand, includ- ing less physical activity (117), higher gly- cemic index (118), and total sugar intake (119), are associated with progression to clinical diabetes.
+Similar associations havenot been seen in the development of auto- antibodies.
+In The Environmental Determi- nants of Diabetes in the Young (TEDDY) longitudinal study, daily minutes spent in moderate to vigorous physical activitywere associated with a reduced risk of pro- gression to type 1 diabetes in children 5–15 years of age with multiple islet auto- antibodies (HR 0.92 [95% CI 0.86 –0.99] per 10-min increase; P= 0.021) (117).
+In the Di- abetes Autoimmunity Study in the Young (DAISY), in children with islet autoantibod- ies, progression to type 1 diabetes was as-sociated with higher glycemic index (HR 2.20 [95% CI 1.17 –4.15]) and total sugar intake (HR 1.75 [95% CI 1.07 –2.85]) (118,119).
+In nonobese diabetic mice, an animal model for the development of type 1diabetes, sustained high-glucose drinking signiﬁcantly aggravated islet in ﬂamma- tion and accelerated the onset of type 1diabetes (120).
+Lifestyle interventions fo- cusing on such factors in those withdiabetesjournals.org/care Prevention or Delay of Diabetes S55Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 stage 1 or stage 2 type 1 diabetes have not yet been reported.
+Pharmacologic Interventions to Delay Symptomatic Type 1 Diabetes Recommendation 3.15 Teplizumab-mzwv infusion to de- lay the onset of symptomatic type 1 di-abetes (stage 3) should be discussedwith selected individuals aged $8y e a r s with stage 2 type 1 diabetes.
+Treatmentshould be in a setting with appropri-ately trained personnel.
+B Teplizumab, a CD3-directed humanized monoclonal antibody engineered to havedecreased Fc receptor binding, has been approved to delay the onset of stage 3 type 1 diabetes in people 8 years of age and older with stage 2 type 1 diabetes based in part on the results of a singletrial in relatives of people with type 1 di- abetes (121).
+In this study, 44 individuals were randomized to a 14-day course of te- plizumab and 32 to placebo.
+The median time to stage 3 type 1 diabetes diagnosisw a s4 8 .
+4m o n t h si nt h et e p l i z u m a bg r o u p and 24.4 months in the placebo group.
+Type 1 diabetes was diagnosed in 19 (43%) participants who received teplizumab and 23 (72%) participants who receivedplacebo (HR 0.41 [95% CI 0.22 –0.78]).
+In prespeci ﬁed analyses, the presence of HLA-DR4, absence of HLA-DR3, and ab-sence of anti-zinc transporter 8 antibody predicted response to teplizumab (HR 0.20 [95% CI 09.0.45], 0.18 [0.07 –0.45], and 0.07 [0.02 –0.26], respectively).
+The most common adverse reactions weretransient lymphopenia (73%) followed by rash (36%).
+Numerous clinical studies are being conducted to test methods for prevent- ing or delaying the onset of stage 3type 1 diabetes in those with evidence of autoimmunity without symptoms or for delaying loss of insulin secretory ca-pacity after onset of stage 3, some withpromising results (see ClinicalTrials.gov and TrialNet.org).
+References 1.
+Ziegler AG, Rewers M, Simell O, et al.
+Seroconversion to multiple islet autoantibodies and risk of progression to diabetes in children.
+JAMA 2013;309:2473 –2479 2.
+Steck AK, Dong F, Taki I, et al.
+Continuous glucose monitoring predicts progression to diabetesin autoantibody positive children.
+J Clin Endocrinol Metab 2019;104:3337 –3344 3.
+Ylescupidez A, Speake C, Pietropaolo SL, et al.
+OGTT metrics surpass continuous glucose moni-toring data for T1D prediction in multiple-autoantibody-positive individuals.
+J Clin EndocrinolMetab 2023;109:57 –67 4.
+Phillip M, Achenbach P, Addala A, et al.
+Consensus guidance for monitoring individuals with islet autoantibody –positive pre-stage 3 type 1 diabetes.
+Diabetes Care 2024;47:1276 –1298 5.
+Knowler WC, Barrett-Connor E, Fowler SE, et al.
+Reduction in the incidence of type 2diabetes with lifestyle intervention or metformin.N Engl J Med 2002;346:393 –403 6.
+Lindstr €om J, Ilanne-Parikka P , Peltonen M, et al.
+Sustained reduction in the incidence of type 2 diabetes by lifestyle intervention: follow-up of theFinnish Diabetes Prevention Study.
+Lancet 2006;368:1673 –1679 7 .
+L iG ,Z h a n gP ,W a n gJ ,e ta l .C a r d i o v a s c u l a r mortality, all-cause mortality, and diabetes in-cidence after lifestyle intervention for people with impaired glucose tolerance in the Da Qing Diabetes Prevention Study: a 23-year follow-up study.
+LancetDiabetes Endocrinol 2014;2:474 –480 8.
+Nathan DM, Bennett PH, Crandall JP , et al.
+Does diabetes prevention translate into reducedlong-term vascular complications of diabetes?Diabetologia 2019;62:1319 –1328 9 .
+G o n gQ ,Z h a n gP ,W a n gJ ,e ta l .M o r b i d i t ya n d mortality after lifestyle intervention for people with impaired glucose tolerance: 30-year resultsof the Da Qing Diabetes Prevention OutcomeStudy.
+Lancet Diabetes Endocrinol 2019;7:452–461 10.
+Knowler WC, Fowler SE, Hamman RF, et al.
+10-year follow-up of diabetes incidence and weight loss in the Diabetes Prevention Program Outcomes Study.
+Lancet 2009;374:1677 –1686 11.
+Diabetes Prevention Program Research Group.
+Long-term effects of lifestyle intervention or met-formin on diabetes development and micro-vascular complications over 15-year follow-up: theDiabetes Prevention Program Outcomes Study.
+Lancet Diabetes Endocrinol 2015;3:866 –875 12.
+Diabetes Prevention Program (DPP) Research Group.
+The Diabetes Prevention Program (DPP):description of lifestyle intervention.
+Diabetes Care2002;25:2165 –2171 13.
+Hamman RF, Wing RR, Edelstein SL, et al.
+Effect of weight loss with lifestyle intervention on risk of diabetes.
+Diabetes Care 2006;29:2102 –2107 14.
+Goldberg RB, Orchard TJ, Crandall JP , et al.
+Effects of long-term metformin and lifestyleinterventions on cardiovascular events in theDiabetes Prevention Program and its outcomestudy.
+Circulation 2022;145:1632 –1641 15.
+Evert AB, Dennison M, Gardner CD, et al.
+Nutrition therapy for adults with diabetes or prediabetes: a consensus report.
+Diabetes Care 2019;42:731 –754 16.
+U.S. Department of Agriculture and U.S. Department of Health and Human Services.
+Dietary Guidelines for Americans, 2020 –2025 .
+Accessed 7 August 2024.
+Available fromhttps://www.dietaryguidelines.gov/resources/ 2020-2025-dietary-guidelines-online-materials 17.
+Salas-Salvad /C19o J, Guasch-Ferr /C19e M, Lee CH, Estruch R, Clish CB, Ros E. Protective effects ofthe Mediterranean diet on type 2 diabetes andmetabolic syndrome.
+J Nutr 2015;146:920s –927s18.
+Estruch R, Ros E, Salas-Salvad /C19oJ ,e ta l .
+Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts.
+N Engl J Med2018;378:e34 19.
+Stentz FB, Brewer A, Wan J, et al.
+Remission of pre-diabetes to normal glucose tolerance inobese adults with high protein versus highcarbohydrate diet: randomized control trial.
+BMJOpen Diabetes Res Care 2016;4:e000258 20.
+Jardine MA, Kahleova H, Levin SM, Ali Z, Trapp CB, Barnard ND.
+Perspective: plant-basedeating pattern for type 2 diabetes prevention and treatment: ef ﬁcacy, mechanisms, and practical considerations.
+Adv Nutr 2021;12:2045 –2055 21.
+Lee Y, Park K. Adherence to a vegetarian diet and diabetes risk: a systematic review and meta-analysis of observational studies.
+Nutrients 2017;9:603 22.
+Qian F, Liu G, Hu FB, Bhupathiraju SN, Sun Q.
+Association between plant-based dietary patternsand risk of type 2 diabetes: a systematic reviewand meta-analysis.
+JAMA Intern Med 2019;179:1335 –1344 23.
+Esposito K, Chiodini P , Maiorino MI, Bellastella G, Panagiotakos D, Giugliano D. Which diet for prevention of type 2 diabetes?
+A meta- analysis of prospective studies.
+Endocrine 2014;47:107 –116 24.
+Yau JW , Thor SM, Ramadas A. Nutritional strategies in prediabetes: a scoping review ofrecent evidence.
+Nutrients 2020;12:2990 25.
+Ley SH, Hamdy O, Mohan V, Hu FB.
+Prevention and management of type 2 diabetes:dietary components and nutritional strategies.Lancet 2014;383:1999 –2007 2 6 .
+P a r k e rA R ,B y h a m - G r a yL ,D e n m a r kR , Winkle PJ.
+The effect of medical nutrition therapy by a registered dietitian nutritionist in patients with prediabetes participating in a randomizedcontrolled clinical research trial.
+J Acad Nutr Diet2014;114:1739 –1748 27.
+Fedewa MV, Gist NH, Evans EM, Dishman RK.
+Exercise and insulin resistance in youth: ameta-analysis.
+Pediatrics 2014;133:e163 –e174 28.
+Davis CL, Pollock NK, Waller JL, et al.
+Exercise dose and diabetes risk in overweight and obesechildren: a randomized controlled trial.
+JAMA2012;308:1103 –1112 2 9 .D a iX ,Z h a iL ,C h e nQ ,e ta l .T w o - y e a r - supervised resistance training prevented dia- betes incidence in people with prediabetes: arandomised control trial.
+Diabetes Metab ResRev 2019;35:e3143 30.
+Thorp AA, Kingwell BA, Sethi P, Hammond L, Owen N, Dunstan DW.
+Alternating bouts of sittingand standing attenuate postprandial glucose res-ponses.
+Med Sci Sports Exerc 2014;46:2053 –2061 31.
+Russo LM, Nobles C, Ertel KA, Chasan-Taber L, Whitcomb BW.
+Physical activity interventions inpregnancy and risk of gestational diabetesmellitus: a systematic review and meta-analysis.
+Obstet Gynecol 2015;125:576 –582 32.
+Henson J, Covenant A, Hall AP , et al.
+Waking up to the importance of sleep in type 2 diabetesmanagement: a narrative review.
+Diabetes Care2024;47:331 –343 33.
+Davies MJ, Aroda VR, Collins BS, et al.
+Management of hyperglycemia in type 2 diabetes,2022.
+A consensus report by the AmericanDiabetes Association (ADA) and the EuropeanS56 Prevention or Delay of Diabetes Diabetes Care Volume 48, Supplement 1, January 2025Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 Association for the Study of Diabetes (EASD).
+Diabetes Care 2022;45:2753 –2786 34.
+Mostafa SA, Mena SC, Antza C, Balanos G, Nirantharakumar K, Tahrani AA.
+Sleep behavioursand associated habits and the progression of pre-diabetes to type 2 diabetes mellitus in adults: asystematic review and meta-analysis.
+Diab Vasc Dis Res 2022;19:14791641221088824 35.
+Nelson KL, Davis JE, Corbett CF.
+Sleep quality: an evolutionary concept analysis.
+NursForum 2022;57:144 –151 36.
+Anothaisintawee T, Reutrakul S, Van Cauter E, Thakkinstian A.
+Sleep disturbances comparedto traditional risk factors for diabetes de- velopment: systematic review and meta-analysis.
+Sleep Med Rev 2016;30:11 –24 37.
+Merikanto I, Lahti T, Puolijoki H, et al.
+Associations of chronotype and sleep withcardiovascular diseases and type 2 diabetes.Chronobiol Int 2013;30:470 –477 38.
+Herman WH, Hoerger TJ, Brandle M, et al.
+The cost-effectiveness of lifestyle modi ﬁcation or metformin in preventing type 2 diabetes in adultswith impaired glucose tolerance.
+Ann Intern Med2005;142:323 –332 39.
+Chen F, Su W, Becker SH, et al.
+Clinical and economic impact of a digital, remotely-delivered intensive behavioral counseling program on Medi- care bene ﬁciaries at risk for diabetes and cardiovascular disease.
+PLoS One 2016;11:e0163627 40.
+Diabetes Prevention Program Research Group.
+The 10-year cost-effectiveness of lifestyleintervention or metformin for diabetes pre-vention: an intent-to-treat analysis of the DPP/ DPPOS.
+Diabetes Care 2012;35:723 –730 41.
+Alva ML, Hoerger TJ, Jeyaraman R, Amico P, Rojas-Smith L. Impact of the YMCA of the USADiabetes Prevention Program on Medicarespending and utilization.
+Health Aff (Millwood)2017;36:417 –424 42.
+Zhou X, Siegel KR, Ng BP, et al.
+Cost- effectiveness of diabetes prevention interventions targeting high-risk individuals and whole po-pulations: a systematic review.
+Diabetes Care2020;43:1593 –1616 43.
+Balk EM, Earley A, Raman G, Avendano EA, Pittas AG, Remington PL.
+Combined diet and physical activity promotion programs to prevent type 2 diabetes among persons at increased risk:a systematic review for the Community Pre-ventive Services Task Force.
+Ann Intern Med2015;163:437 –451 44.
+Ackermann RT, Kang R, Cooper AJ, et al.
+Effect on health care expenditures during nation- wide implementation of the Diabetes PreventionProgram as a health insurance bene ﬁt.
+Diabetes Care 2019;42:1776 –1783 4 5 .
+E l yE K ,G r u s sS M ,L u m a nE T ,e ta l .An a t i o n a l effort to prevent type 2 diabetes: participant-level evaluation of CDC ’s National Diabetes Prevention Program.
+Diabetes Care 2017;40:1331 –1341 46.
+Lanza A, Soler R, Smith B, Hoerger T, Neuwahl S, Zhang P .
+The Diabetes PreventionImpact Tool Kit: an online tool kit to assess thecost-effectiveness of preventing type 2 diabetes.J Public Health Manag Pract 2019;25:E1 –E5 47.
+Cannon MJ, Masalovich S, Ng BP , et al.
+Retention among participants in the NationalDiabetes Prevention Program lifestyle changeprogram, 2012 –2017.
+Diabetes Care 2020;43: 2042 –204948.
+The Community Guide.
+Diabetes Prevention: Interventions Engaging Community Health Workers, 2016.
+Accessed 7 August 2024.
+Available fromhttps://www.thecommunityguide.org/ ﬁndings/ diabetes-prevention-interventions-engaging-community-health-workers 49.
+Zare H, Delgado P, Spencer M, et al.
+Using community health workers to address barriers to participation and retention in Diabetes PreventionProgram: a concept paper.
+J Prim Care CommunityHealth 2022;13:21501319221134563 50.
+Raynor HA, Davidson PG, Burns H, et al.
+Medical nutrition therapy and weight loss questions for the Evidence Analysis Library prevention of type 2 diabetes project: systematicreviews.
+J Acad Nutr Diet 2017;117:1578 –1611 51.
+Nutrition therapy for adults with diabetes or prediabetes.
+ADCES Pract 2022;10:34–38 52.
+Briggs Early K, Stanley K. Position of the Academy of Nutrition and Dietetics: the role of medical nutrition therapy and registered dietitiannutritionists in the prevention and treatment ofprediabetes and type 2 diabetes.
+J Acad Nutr Diet2018;118:343 –353 53.
+Powers MA, Bardsley JK, Cypress M, et al.
+Diabetes self-management education and support in adults with type 2 diabetes: a consensus reportof the American Diabetes Association, the Asso-ciation of Diabetes Care & Education Specialists,the Academy of Nutrition and Dietetics, the American Academy of Family Physicians, the American Academy of PAs, the American Association ofNurse Practitioners, and the American PharmacistsAssociation.
+Diabetes Care 2020;43:1636 –1649 54.
+Hudspeth BD.
+Power of prevention: the pharmacist ’s role in prediabetes management.
+Diabetes Spectr 2018;31:320 –323 55.
+Grock S, Ku JH, Kim J, Moin T. A review of technology-assisted interventions for diabetesprevention.
+Curr Diab Rep 2017;17:107 56.
+Bian RR, Piatt GA, Sen A, et al.
+The effect of technology-mediated diabetes prevention inter-ventions on weight: a meta-analysis.
+J Med Internet Res 2017;19:e76 57.
+Moin T, Damschroder LJ, AuYoung M, et al.
+Results from a trial of an online DiabetesPrevention Program intervention.
+Am J Prev Med2018;55:583 –591 58.
+Michaelides A, Major J, Pienkosz E, Jr ., Wood M, Kim Y , Toro-Ramos T. Usefulness of a novel mobile Diabetes Prevention Program deliveryplatform with human coaching: 65-weekobservational follow-up.
+JMIR Mhealth Uhealth2018;6:e93 59.
+Michaud TL, Almeida FA, Porter GC, et al.
+Effects of a digital diabetes prevention program on cardiovascular risk among individuals withprediabetes.
+Prim Care Diabetes 2023;17:148 –154 60.
+Kim SE, Castro Sweet CM, Cho E, Tsai J, Cousineau MR.
+Evaluation of a digital diabetesprevention program adapted for low-income patients, 2016-2018.
+Prev Chronic Dis 2019;16: E155 61.
+Vadheim LM, Patch K, Brokaw SM, et al.
+Telehealth delivery of the diabetes preventionprogram to rural communities.
+Transl Behav Med2017;7:286 –291 62.
+Fischer HH, Durfee MJ, Raghunath SG, Ritchie ND.
+Short message service text message support for weight loss in patients with prediabetes:pragmatic trial.
+JMIR Diabetes 2019;4:e1298563.
+Gerstein HC, Bosch J, Dagenais GR, et al.
+Basal insulin and cardiovascular and other outcomes in dysglycemia.
+N Engl J Med 2012;367:319 –328 64.
+DeFronzo RA, Tripathy D, Schwenke DC, et al.
+Pioglitazone for diabetes prevention in impairedglucose tolerance.
+N Engl J Med 2011;364:1104 –1115 65.
+Gerstein HC, Yusuf S, Bosch J, et al.
+Effect of rosiglitazone on the frequency of diabetes in patients with impaired glucose tolerance orimpaired fasting glucose: a randomised con-trolled trial.
+Lancet 2006;368:1096 –1105 66. le Roux CW, Astrup A, Fujioka K, et al.
+3 years of liraglutide versus placebo for type 2 diabetes riskreduction and weight management in individuals with prediabetes: a randomised, double-blind trial.
+Lancet 2017;389:1399 –1409 67.
+Chiasson JL, Josse RG, Gomis R, Hanefeld M, Karasik A, Laakso M. Acarbose for prevention oftype 2 diabetes mellitus: the STOP-NIDDM ran-domised trial.
+Lancet 2002;359:2072 –2077 68.
+Wilding JPH, Batterham RL, Calanna S, et al.
+Once-weekly semaglutide in adults with overweight or obesity.
+N Engl J Med 2021;384:989 –1002 69.
+Holman RR, Haffner SM, McMurray JJ, et al.
+Effect of nateglinide on the incidence of diabetesand cardiovascular events.
+N Engl J Med 2010;362:1463 –1476 70.
+Dennison RA, Chen ES, Green ME, et al.
+The absolute and relative risk of type 2 diabetes after gestational diabetes: a systematic review and meta-analysis of 129 studies.
+Diabetes Res ClinPract 2021;171:108625 71.
+Torgerson JS, Hauptman J, Boldrin MN, Sj€ostr€om L. XENical in the prevention of Diabetes in Obese Subjects (XENDOS) study: a randomizedstudy of orlistat as an adjunct to lifestyle changes for the prevention of type 2 diabetes in obese patients.
+Diabetes Care 2004;27:155 –161 72.
+Garvey WT, Ryan DH, Henry R, et al.
+Prevention of type 2 diabetes in subjects withprediabetes and metabolic syndrome treatedwith phentermine and topiramate extendedrelease.
+Diabetes Care 2014;37:912 –921 73.
+Jastreboff AM, Aronne LJ, Ahmad NN, et al.
+Tirzepatide once weekly for the treatment of obesity.
+N Engl J Med 2022;387:205 –216 74.
+Wittert G, Bracken K, Robledo KP, et al.
+Testosterone treatment to prevent or revert type 2diabetes in men enrolled in a lifestyle programme(T4DM): a randomised, double-blind, placebo- controlled, 2-year, phase 3b trial.
+Lancet Diabetes Endocrinol 2021;9:32 –45 75.
+McMurray JJ, Holman RR, Haffner SM, et al.
+Effect of valsartan on the incidence of diabetesand cardiovascular events.
+N Engl J Med 2010;362:1477 –1490 76.
+Bosch J, Yusuf S, Gerstein HC, et al.
+Effect of ramipril on the incidence of diabetes.
+N Engl J Med 2006;355:1551 –1562 77.
+Ray KK, Colhoun HM, Szarek M, et al.
+Effects of alirocumab on cardiovascular and metabolicoutcomes after acute coronary syndrome inpatients with or without diabetes: a prespeci ﬁed analysis of the ODYSSEY OUTCOMES randomisedcontrolled trial.
+Lancet Diabetes Endocrinol 2019; 7:618 –628 78.
+Everett BM, Donath MY, Pradhan AD, et al.
+Anti-in ﬂammatory therapy with canakinumab for the prevention and management of diabetes.
+JAm Coll Cardiol 2018;71:2392 –2401diabetesjournals.org/care Prevention or Delay of Diabetes S57Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025 79.
+Demay MB, Pittas AG, Bikle DD, et al.
+Vitamin D for the prevention of disease: an Endocrine Society clinical practice guideline.
+J Clin Endocrinol Metab 2024;109:1907 –1947 80.
+Jorde R, Sollid ST, Svartberg J, et al.
+Vitamin D20,000 IU per week for ﬁv ey e a r sd o e sn o t prevent progression from prediabetes to diabetes.J Clin Endocrinol Metab 2016;101:1647 –1655 81.
+Pittas AG, Dawson-Hughes B, Sheehan P ,et al.
+Vitamin D supplementation and preventionof type 2 diabetes.
+N Engl J Med 2019;381:520–530 82.
+Kawahara T, Suzuki G, Mizuno S, et al.
+Effectof active vitamin D treatment on development oftype 2 diabetes: DPVD randomised controlled trialin Japanese population.
+BMJ 2022;377:e06622283.
+Pittas AG, Kawahara T, Jorde R, et al.
+VitaminD and risk for type 2 diabetes in people withprediabetes: a systematic review and meta-analysis of individual participant data from 3 randomized clinical trials.
+Ann Intern Med 2023; 176:355 –363 84.
+Shah VP , Nayfeh T, Alsawaf Y , et al.
+Asystematic review supporting the EndocrineSociety clinical practice guidelines on vitamin D. JClin Endocrinol Metab 2024;109:1961 –1974 85.
+Diabetes Prevention Program Research Group.Long-term safety, tolerability, and weight lossassociated with metformin in the DiabetesPrevention Program Outcomes Study.
+DiabetesCare 2012;35:731 –737 86.
+Ratner RE, Christophi CA, Metzger BE, et al.Prevention of diabetes in women with a historyof gestational diabetes: effects of metformin andlifestyle interventions.
+J Clin Endocrinol Metab2008;93:4774 –4779 87.
+Aroda VR, Christophi CA, Edelstein SL, et al.The effect of lifestyle intervention and metforminon preventing or delaying diabetes among women with and without gestational diabetes: the Diabetes Prevention Program outcomes study10-year follow-up.
+J Clin Endocrinol Metab2015;100:1646 –1653 88.
+Diabetes Prevention Program Research Group.Long-term effects of metformin on diabetes pre-vention: identi ﬁcation of subgroups that bene ﬁted most in the Diabetes Prevention Program andDiabetes Prevention Program Outcomes Study.Diabetes Care 2019;42:601 –608 89.
+Ramachandran A, Snehalatha C, Mary S,Mukesh B, Bhaskar AD, Vijay V. The IndianDiabetes Prevention Programme shows thatlifestyle modi ﬁcation and metformin prevent type 2 diabetes in Asian Indian subjects withimpaired glucose tolerance (IDPP-1).
+Diabetologia2006;49:289 –297 90.
+Aroda VR, Edelstein SL, Goldberg RB, et al.
+Long-term metformin use and vitamin B12 deﬁciency in the Diabetes Prevention Program Outcomes Study.
+J Clin Endocrinol Metab 2016;101:1754 –1761 91.
+Kim J, Ahn CW , Fang S, Lee HS, Park JS.Association between metformin dose andvitamin B12 de ﬁciency in patients with type 2 diabetes.
+Medicine (Baltimore) 2019;98:e1791892.
+Grif ﬁn SJ, Bethel MA, Holman RR, et al.
+Metformin in non-diabetic hyperglycaemia: theGLINT feasibility RCT .
+Health Technol Assess2018;22:1 –6493.
+de Jager J, Kooy A, Lehert P , et al.
+Long term treatment with metformin in patients with type 2 diabetes and risk of vitamin B-12 de ﬁciency: randomised placebo controlled trial.
+BMJ 2010;340:c218194.
+Kidney Disease: Improving Global Outcomes(KDIGO) Diabetes Work Group.
+KDIGO 2022 clinicalpractice guideline for diabetes management inchronic kidney disease.
+Kidney Int 2022;102:S1–S127 95.
+Ali MK, Bullard KM, Saydah S, Imperatore G,Gregg EW.
+Cardiovascular and renal burdens ofprediabetes in the USA: analysis of data fromserial cross-sectional surveys, 1988-2014.
+LancetDiabetes Endocrinol 2018;6:392 –403 96.
+Pan Y, Chen W, Wang Y. Prediabetes andoutcome of ischemic stroke or transient ischemicattack: a systematic review and meta-analysis.
+JStroke Cerebrovasc Dis 2019;28:683 –692 97.
+Huang Y, Cai X, Mai W, Li M, Hu Y.
+Association between prediabetes and risk of cardiovascular disease and all cause mortality:systematic review and meta-analysis.
+BMJ 2016;355:i595398.
+Yeh HC, Duncan BB, Schmidt MI, Wang NY ,Brancati FL.
+Smoking, smoking cessation, and riskfor type 2 diabetes mellitus: a cohort study.
+AnnIntern Med 2010;152:10 –17 99.
+Hu Y , Zong G, Liu G, et al.
+Smoking cessation,weight change, type 2 diabetes, and mortality.
+NEngl J Med 2018;379:623 –632 100.
+Orchard TJ, Temprosa M, Barrett-Connor E,et al.
+Long-term effects of the Diabetes PreventionProgram interventions on cardiovascular riskfactors: a report from the DPP Outcomes Study.Diabet Med 2013;30:46 –55 101.
+Salas-Salvad /C19oJ ,D /C19ıaz-L/C19opez A, Ruiz-Canela M, et al.
+Effect of a lifestyle intervention programwith energy-restricted mediterranean diet and exercise on weight loss and cardiovascular risk factors: one-year results of the PREDIMED-Plus Trial.
+Diabetes Care 2019;42:777 –788 102.
+Arnett DK, Blumenthal RS, Albert MA, et al.2019 ACC/AHA guideline on the primaryprevention of cardiovascular disease: a report ofthe American College of Cardiology/AmericanHeart Association Task Force on Clinical PracticeGuidelines.
+Circulation 2019;140:e596 –e646 103.
+Thakker D, Nair S, Pagada A, Jamdade V,Malik A. Statin use and the risk of developingdiabetes: a network meta-analysis.
+Pharma-coepidemiol Drug Saf 2016;25:1131 –1149 104.
+Crandall JP, Mather K, Rajpathak SN, et al.Statin use and risk of developing diabetes: resultsfrom the Diabetes Prevention Program.
+BMJOpen Diabetes Res Care 2017;5:e000438105.
+Mansi IA, Chansard M, Lingvay I, Zhang S, Halm EA, Alvarez CA.
+Association of statin therapy initiation with diabetes progression: aretrospective matched-cohort study.
+JAMA InternMed 2021;181:1562 –1574 106.
+Ridker PM, Pradhan A, MacFadyen JG,Libby P , Glynn RJ.
+Cardiovascular bene ﬁts and diabetes risks of statin therapy in primaryprevention: an analysis from the JUPITER trial.Lancet 2012;380:565 –571 107.
+Cai T, Abel L, Langford O, et al.
+Associationsbetween statins and adverse events in primaryprevention of cardiovascular disease: systematicreview with pairwise, network, and dose- response meta-analyses.
+BMJ 2021;374:n1537 108.
+Kernan WN, Viscoli CM, Furie KL, et al.
+Pioglitazone after ischemic stroke or transientischemic attack.
+N Engl J Med 2016;374:1321 –1331 109.
+Inzucchi SE, Viscoli CM, Young LH, et al.Pioglitazone prevents diabetes in patients withinsulin resistance and cerebrovascular disease.Diabetes Care 2016;39:1684 –1692 110.
+Spence JD, Viscoli CM, Inzucchi SE, et al.Pioglitazone therapy in patients with stroke andprediabetes: a post hoc analysis of the IRISrandomized clinical trial.
+JAMA Neurol 2019;76:526–535 111.
+Spence JD, Viscoli C, Kernan WN, et al.Efﬁcacy of lower doses of pioglitazone after stroke or transient ischaemic attack in patientswith insulin resistance.
+Diabetes Obes Metab2022;24:1150 –1158 112.
+Nadeau KJ, Anderson BJ, Berg EG, et al.
+Youth-onset type 2 diabetes consensus report: current status, challenges, and priorities.
+DiabetesCare 2016;39:1635 –1642 113.
+Rooney MR, Rawlings AM, Pankow JS, et al.Risk of progression to diabetes among olderadults with prediabetes.
+JAMA Intern Med 2021;181:511 –519 114.
+Lachin JM, Christophi CA, Edelstein SL,et al.
+Factors associated with diabetes onsetduring metformin versus placebo therapy in theDiabetes Prevention Program.
+Diabetes 2007;56:1153 –1159 115.
+Perreault L, Pan Q, Schroeder EB, et al.Regression from prediabetes to normal glucoseregulation and prevalence of microvasculardisease in the Diabetes Prevention ProgramOutcomes Study (DPPOS).
+Diabetes Care 2019;42:1809 –1815 116.
+Chen Y , Zhang P , Wang J, et al.
+Associations of progression to diabetes and regression to normal glucose tolerance with development ofcardiovascular and microvascular disease amongpeople with impaired glucose tolerance: asecondary analysis of the 30 year Da QingDiabetes Prevention Outcome Study.
+Diabetologia2021;64:1279 –1287 117.
+Liu X, Johnson SB, Lynch KF, et al.
+Physicalactivity and the development of islet auto-immunity and type 1 diabetes in 5- to 15-year-oldchildren followed in the TEDDY study.
+DiabetesCare 2023;46:1409 –1416 118.
+Lamb MM, Yin X, Barriga K, et al.
+Dietaryglycemic index, development of islet auto-immunity, and subsequent progression to type 1diabetes in young children.
+J Clin EndocrinolMetab 2008;93:3936 –3942 119.
+Lamb MM, Frederiksen B, Seifert JA, Kroehl M, Rewers M, Norris JM.
+Sugar intake is associated with progression from islet auto-immunity to type 1 diabetes: the DiabetesAutoimmunity Study in the Young.
+Diabetologia2015;58:2027 –2034 120.
+Li X, Wang L, Meng G, et al.
+Sustained highglucose intake accelerates type 1 diabetes inNOD mice.
+Front Endocrinol (Lausanne) 2022;13:1037822121.
+Herold KC, Bundy BN, Long SA, et al.
+An anti-CD3 antibody, teplizumab, in relatives at risk fortype 1 diabetes.
+N Engl J Med 2019;381:603 –613S58 Prevention or Delay of Diabetes Diabetes Care Volume 48, Supplement 1, January 2025Downloaded from http://diabetesjournals.org/care/article-pdf/48/Supplement_1/S50/791483/dc25s003.pdf by guest on 22 April 2025

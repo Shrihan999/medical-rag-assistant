@@ -1,64 +1,54 @@
 import os
-from pathlib import Path
+import logging
+import json
+from typing import Dict, Any
 
-# Project root directory
-ROOT_DIR = Path(__file__).parent.parent
+logger = logging.getLogger(__name__)
 
-# Data paths
-DATA_DIR = ROOT_DIR / "data"
-DOCUMENTS_DIR = DATA_DIR / "documents"
-PROCESSED_DIR = DATA_DIR / "processed"
-EMBEDDINGS_DIR = PROCESSED_DIR / "embeddings"
+def save_json(data: Dict[str, Any], filepath: str):
+    """
+    Save data to a JSON file.
+    
+    Args:
+        data (Dict): Data to be saved
+        filepath (str): Path to save the JSON file
+    """
+    try:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        logger.info(f"Saved data to {filepath}")
+    except Exception as e:
+        logger.error(f"Error saving JSON file: {e}")
 
-# Model paths
-MODELS_DIR = ROOT_DIR / "models"
-LLM_MODEL_DIR = MODELS_DIR / "Med-Qwen2-7B-GGUF"
+def load_json(filepath: str) -> Dict[str, Any]:
+    """
+    Load data from a JSON file.
+    
+    Args:
+        filepath (str): Path to the JSON file
+    
+    Returns:
+        Dict: Loaded data or empty dict if error
+    """
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        logger.error(f"Error loading JSON file {filepath}: {e}")
+        return {}
 
-# Ensure directories exist
-DOCUMENTS_DIR.mkdir(parents=True, exist_ok=True)
-EMBEDDINGS_DIR.mkdir(parents=True, exist_ok=True)
-LLM_MODEL_DIR.mkdir(parents=True, exist_ok=True)
-
-# Constants
-# Choose an embedding model (adjust if needed)
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
-
-# Choose a GGUF file you download from the HF repo
-# IMPORTANT: Update this filename based on the actual file you download
-# Start with this recommended one
-LLM_GGUF_FILE = "Med-Qwen2-7B.Q4_K_M.gguf"
-
-# OR, if you want to try the higher quality one later:
-# LLM_GGUF_FILE = "med-qwen2-7b.Q6_K.gguf"
-LLM_MODEL_PATH = LLM_MODEL_DIR / LLM_GGUF_FILE
-
-# Vector Store filename
-INDEX_PATH = EMBEDDINGS_DIR / "faiss_index.index"
-DOCSTORE_PATH = EMBEDDINGS_DIR / "docstore.pkl" # To store text chunks corresponding to index
-
-# Chunking parameters
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 150
-
-# Retrieval parameters
-TOP_K = 5 # Number of documents to retrieve
-
-# LLM parameters (adjust based on your hardware)
-LLM_N_CTX = 4096 # Context window size for the LLM
-LLM_N_GPU_LAYERS = -1 # Set > 0 if you have llama-cpp-python built with GPU support (e.g., 30)
-LLM_TEMPERATURE = 0.7
-LLM_MAX_TOKENS = 1024
-
-# Hugging Face Repo ID for downloading
-LLM_REPO_ID = "mradermacher/Med-Qwen2-7B-GGUF"
-
-print(f"--- Configuration ---")
-print(f"Root Dir: {ROOT_DIR}")
-print(f"Documents Dir: {DOCUMENTS_DIR}")
-print(f"Embeddings Dir: {EMBEDDINGS_DIR}")
-print(f"LLM Model Dir: {LLM_MODEL_DIR}")
-print(f"LLM Model Path: {LLM_MODEL_PATH}")
-print(f"FAISS Index Path: {INDEX_PATH}")
-print(f"Docstore Path: {DOCSTORE_PATH}")
-print(f"Embedding Model: {EMBEDDING_MODEL_NAME}")
-print(f"---------------------")
+def create_project_structure():
+    """
+    Create the basic project directory structure.
+    """
+    project_dirs = [
+        "data/documents",
+        "data/processed",
+        "data/processed/embeddings",
+        "models/Med-Qwen2-7B-GGUF",
+        "streamlit_app"
+    ]
+    
+    for directory in project_dirs:
+        os.makedirs(directory, exist_ok=True)
+        logger.info(f"Created directory: {directory}")

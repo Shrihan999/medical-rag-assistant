@@ -1,88 +1,92 @@
+import os
 import logging
-from pathlib import Path
-from typing import List, Dict
+from typing import List
+import PyPDF2
+import nltk
+from nltk.tokenize import sent_tokenize
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from pypdf import PdfReader
+# Download necessary NLTK resources
+nltk.download('punkt', quiet=True)
 
-from src.utils import DOCUMENTS_DIR, CHUNK_SIZE, CHUNK_OVERLAP
+logger = logging.getLogger(__name__)
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-def extract_text_from_pdf(pdf_path: Path) -> str:
-    """Extracts text from a single PDF file."""
+def extract_text_from_pdf(pdf_path: str) -> str:
+    """
+    Extract text from a PDF file.
+    
+    Args:
+        pdf_path (str): Path to the PDF file
+    
+    Returns:
+        str: Extracted text from the PDF
+    """
     try:
-        reader = PdfReader(pdf_path)
-        text = ""
-        for page in reader.pages:
-            page_text = page.extract_text()
-            if page_text:  # Ensure text was extracted
-                text += page_text + "\n" # Add newline between pages
-        logging.info(f"Successfully extracted text from {pdf_path.name}")
-        return text
+        with open(pdf_path, 'rb') as file:
+            reader = PyPDF2.PdfReader(file)
+            text = ""
+            for page in reader.pages:
+                text += page.extract_text() + "\n"
+            return text
     except Exception as e:
-        logging.error(f"Error reading PDF {pdf_path.name}: {e}")
+        logger.error(f"Error extracting text from {pdf_path}: {e}")
         return ""
 
-def chunk_text(text: str, file_name: str) -> List[Dict[str, str]]:
-    """Chunks text into smaller pieces with metadata."""
-    if not text:
-        return []
-
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=CHUNK_SIZE,
-        chunk_overlap=CHUNK_OVERLAP,
-        length_function=len,
-        add_start_index=True, # Adds character start index for potential future use
-    )
-    chunks = text_splitter.split_text(text)
-
-    # Create structured chunks with metadata (source filename)
-    structured_chunks = [
-        {"page_content": chunk, "metadata": {"source": file_name}}
-        for chunk in chunks
-    ]
-    logging.info(f"Split text from {file_name} into {len(structured_chunks)} chunks.")
-    return structured_chunks
-
-
-def process_documents() -> List[Dict[str, str]]:
+def preprocess_text(text: str) -> List[str]:
     """
-    Processes all PDF documents in the specified directory:
-    1. Finds PDF files.
-    2. Extracts text from each PDF.
-    3. Chunks the extracted text.
-    Returns a list of text chunks (dictionaries with 'page_content' and 'metadata').
+    Preprocess text by splitting into sentences.
+    
+    Args:
+        text (str): Input text
+    
+    Returns:
+        List[str]: List of sentences
     """
-    all_chunks = []
-    pdf_files = list(DOCUMENTS_DIR.glob("*.pdf"))
+    # Remove extra whitespace and newlines
+    text = " ".join(text.split())
+    
+    # Split into sentences
+    sentences = sent_tokenize(text)
+    
+    # Filter out very short sentences
+    sentences = [sent.strip() for sent in sentences if len(sent.strip()) > 10]
+    
+    return sentences
 
-    if not pdf_files:
-        logging.warning(f"No PDF files found in {DOCUMENTS_DIR}. Please add some documents.")
-        return []
-
-    logging.info(f"Found {len(pdf_files)} PDF files to process.")
-
-    for pdf_path in pdf_files:
-        logging.info(f"Processing: {pdf_path.name}")
-        raw_text = extract_text_from_pdf(pdf_path)
-        if raw_text:
-            chunks = chunk_text(raw_text, pdf_path.name)
-            all_chunks.extend(chunks)
-        else:
-            logging.warning(f"Skipping {pdf_path.name} due to extraction errors or empty content.")
-
-    logging.info(f"Total chunks created from all documents: {len(all_chunks)}")
-    return all_chunks
-
-if __name__ == '__main__':
-    # Example usage: Run this script directly to test processing
-    processed_chunks = process_documents()
-    if processed_chunks:
-        print(f"\nSuccessfully processed {len(processed_chunks)} chunks.")
-        # print("\nFirst few chunks:")
-        # for i, chunk in enumerate(processed_chunks[:3]):
-        #     print(f"--- Chunk {i+1} (Source: {chunk['metadata']['source']}) ---")
-        #     print(chunk['page_content'][:200] + "...") # Print start of chunk
-    else:
-        print("No chunks were processed. Check logs and data/documents folder.")
+def process_pdf_documents(documents_dir: str = "data/documents", 
+                           output_dir: str = "data/processed") -> List[str]:
+    """
+    Process PDF documents in the specified directory.
+    
+    Args:
+        documents_dir (str): Directory containing PDF files
+        output_dir (str): Directory to save processed documents
+    
+    Returns:
+        List[str]: List of processed document paths
+    """
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    processed_docs = []
+    
+    # Iterate through PDF files
+    for filename in os.listdir(documents_dir):
+        if filename.endswith(".pdf"):
+            pdf_path = os.path.join(documents_dir, filename)
+            
+            # Extract text from PDF
+            text = extract_text_from_pdf(pdf_path)
+            
+            # Preprocess text
+            sentences = preprocess_text(text)
+            
+            # Save processed sentences
+            output_path = os.path.join(output_dir, f"{os.path.splitext(filename)[0]}_processed.txt")
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write("\n".join(sentences))
+            
+            processed_docs.append(output_path)
+            logger.info(f"Processed document: {filename}")
+    
+    logger.info(f"Total processed documents: {len(processed_docs)}")
+    return processed_docs

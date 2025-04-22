@@ -1,10 +1,7 @@
-streamlit
-datasets
-sentence-transformers
-faiss-cpu
-huggingface-hub
-transformers
-torch
-llama-cpp-python
-numpy
-pandas
+1) Which populations are considered high risk for developing type 2 diabetes?
+
+2) Which populations are considered high risk for developing type 2 diabetes?
+
+3) How often should patients with prediabetes be re-evaluated?
+
+4) How effective is medical nutrition therapy (MNT) in delaying diabetes?
