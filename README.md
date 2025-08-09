@@ -76,7 +76,7 @@ We implemented a **Retrieval-Augmented Generation (RAG)** pipeline that:
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/medical-rag-assistant.git
+git clone https://github.com/<shrihan999>/medical-rag-assistant.git
 cd medical-rag-assistant
 
 # Install dependencies
